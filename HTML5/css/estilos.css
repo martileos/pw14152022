@@ -1,0 +1,38 @@
+body {
+    max-width: 1024px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+header nav ul li{
+   background: orange; 
+   display: inline-block;
+   padding: 5px;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+header nav ul li:hover {
+    background-color: black;
+}
+
+footer {
+    background: green;
+    color: white
+}
+
+section {
+    border: 1px solid red;
+}
+
+aside {
+    border: 5px solid blue;
+}
+
+

@@ -1,0 +1,96 @@
+/*
+Tipos de selectores:
+    - Selectores básicos.
+    - Selectores combinadores.
+    - Selectores de pseudo-elementos.
+    - Selectores de pseudo-clases.
+*/
+
+/****SELECTORES BÁSICOS:
+    - etiquetas, clases, id, universales y atributos */
+
+h1 { /*selector de etiqueta*/
+    background-color: aqua;
+    margin: 30px 0;
+}
+
+.titulo { /*selector de clases*/
+    background-color: blue;
+}
+
+#parrafo { /*selector de id*/
+    background-color: blueviolet;
+    margin-bottom: 30px;
+}
+
+* { /*Universal: Resetear estilos que tiene el navegador*/
+    margin: 0; 
+}
+
+/*selector de atributos*/
+[href] { /*Selecciona los elementos que tienen ese atributo*/
+    color: green;
+}
+
+/*Selecciona los elementos que tienen ese atributo y valor*/
+[href="#"] {
+    color: red;
+}
+
+/*Seleccioar los elementos que contengan ese atributo
+y ese valor al menos una vez*/
+[class~="verde"]{
+    color: blue;
+}
+
+/*Seleccioar los elementos que contengan ese atributo
+y exactamente ese valor o empiece por el valor
+seguido de un guión*/
+[class|="verde"]{
+    color: violet;
+}
+
+/*Seleccioar los elementos que contengan ese atributo
+y empiecen por ese valor*/
+[class^="verde"]{
+    color: green;
+}
+
+/*Seleccioar los elementos que contengan ese atributo
+y termine por ese valor*/
+[class$="verde"]{
+    color: palevioletred;
+}
+
+/*Seleccioar los elementos que contengan ese atributo
+y contenga ese valor*/
+[class*="verde"]{
+    color: blue;
+}
+
+/****SELECTOR COMBINADORES:
+    -HERMANO ADYACENTE, HERMANO GENERAL,
+     DESCENDENTES Y HIJO DIRECTO*/
+
+/*Hermano adyacente, selecciona a un hermano que este justo debajo,
+hermano inferior*/
+h1 + h2 {
+    color: red;
+}
+
+/*Selector de hermano general, seleccionar todos los hermanos
+que esten debajo del elemento y deben compartir el mismo padre*/
+h1 ~ h3 {
+ color: blue;
+}
+
+/*Selector descendente, aplica estilos a todos los elementos
+que estan dentro de este, el estilo aplica a todos los hijos*/
+div p {
+    color: purple;
+}
+
+/*Selector de hijo directo, seleccioåna todos los hijos directos*/
+span > p {
+    color: green;
+}

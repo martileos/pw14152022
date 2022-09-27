@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <h3>Texto</h3>
+        <label for="nombre">Nombre</label>
+        <input 
+            type="text" 
+            id="nombre" 
+            name="nombre"
+            value="JOSE"
+            placeholder="Ingrese un nombre"
+            size="30"
+            maxlength="10"
+            pattern=""
+            disabled>
+
+            <h3>Radio</h3>
+
+            <fieldset>
+                <legend>Género</legend>
+                <input type="radio" name="genero" value="H" checked> Hombre <br>
+                <input type="radio" name="genero" value="M"> Mujer  <br>
+                <input type="radio" name="genero" value="O"> Otro 
+            </fieldset>
+
+            <h3>Select</h3>
+            <label for="frutas">Frutas</label>
+            <select name="frutas" id="frutas">
+                <optgroup label="Favoritas">
+                    <option value="fresa">Fresa</option>
+                    <option value="cereza">Cereza</option>
+                </optgroup>
+                <optgroup label="Otras">
+                    <option value="uva">Uva</option>
+                    <option value="pera">Pera</option>
+                </optgroup>
+            </select>
+
+            <h3>Textarea</h3>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+
+            <h3>datalist</h3>
+            <label for="busc">Buscador:</label>
+            <input type="text" id="busc" list="buscador">
+            <datalist id="buscador">
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+
+            <h3>password</h3>
+            <input type="password" placeholder="contraseña" required>
+
+            <h3>checkbox</h3>
+            <input type="checkbox" name="color-azul" value="az"> Azul <br>
+            <input type="checkbox" name="color-rosa" value="ro"> Rosa <br>
+            <input type="checkbox" name="color-rojo" value="rj"> Rojo <br>
+            
+            <h3>Color</h3>
+            <input type="color">
+
+            <h3>Fechas</h3>
+            <input type="date" min="2010-01-01">
+            <input type="datetime-local">
+            <input type="time">
+            <input type="week">
+            <input type="month">
+
+            <h3>email</h3>
+            <input type="email">
+
+            <h3>url</h3>
+            <input type="url">
+
+            <h3>number</h3>
+            <input type="number" min="1" max="100" step="10">
+
+            <h3>range</h3>
+            <input type="range" min="0" max="30" step="15">
+
+            <h3>file</h3>
+            <input type="file" multiple>
+
+            <h3>search</h3>
+            <input type="search">
+
+            <br><br>
+            <input type="submit">
+            <input type="image">
+            <button>Enviar</button>
+            <input type="reset" value="Limpiar">
+         
+    </form>
+    
+</body>
+</html>
